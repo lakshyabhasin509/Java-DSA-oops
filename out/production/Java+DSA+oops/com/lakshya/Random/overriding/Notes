@@ -1,0 +1,18 @@
+redefining a method of super class in subclass
+the method inherited from the super class is shadowed by the method redifined
+
+
+Dynamic mehtod dispatch
+
+super ob=new subclass();
+reference of super class stores the object of subclass
+diplay() method is overrided
+
+so if we do ob.display which display will be called,according to the reference or acc to the object?
+so the answer is acc to the object
+
+display of subclass is called as the ob reference of super type stores the object of subclass
+
+
+defination:a super class reference holding the object of subclass then the overrided method of the object will be called.
+

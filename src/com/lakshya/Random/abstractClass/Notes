@@ -1,0 +1,22 @@
+There are two types of classes :
+concrete and abstract classes.
+we can create the object of concrete class 
+but not of abstract classes 
+
+abstract: we cannot create object but can create reference;
+Super s1; // it is allowed
+Super s2=new Super()// not allowed
+
+if a class should be made abstract if a has any abstract method
+abstract class is a class which may or may not have a abstract method
+
+a class inheriting any abstract class is also an abstract class
+if that inherited class wants to be a concrete class should override all
+the methods of the super class 
+
+rules for abstract class and methods
+1.cannot create object;
+2.abstract cannot be final that means there will be no subclasses
+3. abstract classes cannot be static 
+4. abstract method cannot be final
+5.
