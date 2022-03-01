@@ -1,4 +1,4 @@
-package abstractClass;
+package com.oops.abstractClass;
 
 public abstract class abstractMeth {
     abstractMeth() {

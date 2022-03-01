@@ -1,4 +1,4 @@
-package BS;
+package com.lakshya.Random.BS;
 
 public class Bs {
     static int binarySearch(int arr[],int key){
