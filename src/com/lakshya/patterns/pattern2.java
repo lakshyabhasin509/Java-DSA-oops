@@ -1,11 +1,11 @@
-/* 1
- * 22
- * 333
- * 4444
- * 55555
+package com.lakshya.patterns;/* *
+   **
+   ***
+   ****
+   *****
  */
 import java.util.Scanner;
-class pattern3{
+class pattern2{
     public static void main(String ab[])
     {
         int i,j;
@@ -15,7 +15,7 @@ class pattern3{
         for( i=1;i<=n;i++)
         {
             for(j=1;j<=i;j++)
-            System.out.print(i);
+            System.out.print("*");
         System.out.println();
     }
 

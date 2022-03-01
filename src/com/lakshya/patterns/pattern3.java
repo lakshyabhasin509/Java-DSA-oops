@@ -1,25 +1,21 @@
-/*     *
-      ***
-     *****
-    *******
-   *********
+package com.lakshya.patterns;/* 1
+ * 22
+ * 333
+ * 4444
+ * 55555
  */
 import java.util.Scanner;
-class pattern5{
+class pattern3{
     public static void main(String ab[])
     {
-        int i,j,k,l;
+        int i,j;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number");
         int n=sc.nextInt();
         for( i=1;i<=n;i++)
         {
-            for(k=n;k>i;k--)
-            System.out.print(" ");
-            for(l=1;l<i;l++)
-            System.out.print("*");
             for(j=1;j<=i;j++)
-            System.out.print("*");
+            System.out.print(i);
         System.out.println();
     }
 

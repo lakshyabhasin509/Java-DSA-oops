@@ -1,4 +1,4 @@
-/*12345
+package com.lakshya.patterns;/*12345
   1234
   123
   12
