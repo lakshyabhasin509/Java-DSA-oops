@@ -126,7 +126,36 @@ public int delete(int index){
         temp.next=temp.next.next;
         return val;
 
-}
+}public boolean findCycle(){
+        Node slow=head;
+        Node fast=head;
+        while(fast!=null &&fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+
+            if(slow==fast)return true;
+        }
+        return false;
+    }
+    public int lengthOfCycle(){
+       if(!findCycle())
+        return -1;
+        Node slow=head;
+        Node fast=head;
+        while(fast!=null &&fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+
+            if(slow==fast)break;
+        }int count=0;
+       while (slow!=fast){
+           count++;
+           slow=slow.next;
+       }
+       return count;
+    }
+
+
 public Node find(int val){
         Node temp=head;
         while (temp!=null){

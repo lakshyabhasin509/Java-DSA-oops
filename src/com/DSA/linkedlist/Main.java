@@ -14,7 +14,7 @@ public class Main {
         list.display();
 //        list.insert(555,14);
 //       list.delete();
-list.deleteDuplicates();
+//list.deleteDuplicates();
 
         list.display();
 
