@@ -156,6 +156,8 @@ public int delete(int index){
     }
 
 
+
+
 public Node find(int val){
         Node temp=head;
         while (temp!=null){
