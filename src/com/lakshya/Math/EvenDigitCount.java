@@ -1,4 +1,4 @@
-
+package com.lakshya.Math;
 //print number of even digits in a number
 
 import java.util.Scanner;

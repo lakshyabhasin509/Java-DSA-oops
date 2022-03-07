@@ -1,4 +1,4 @@
-
+package com.lakshya.Math;
 //WAP to print if a number is special or not 
 //i.e: sum of digits = product of digits
 import java.util.Scanner;

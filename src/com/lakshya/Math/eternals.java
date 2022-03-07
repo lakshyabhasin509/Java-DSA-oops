@@ -1,3 +1,5 @@
+package com.lakshya.Math;
+
 import java.util.Scanner;
 class eternals{
     public static void main(String ab[]){

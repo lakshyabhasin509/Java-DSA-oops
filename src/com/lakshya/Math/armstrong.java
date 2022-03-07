@@ -1,3 +1,5 @@
+package com.lakshya.Math;
+
 import java.util.Scanner;
 class armstrong{
     public static void main(String ab[])

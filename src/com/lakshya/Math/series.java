@@ -1,4 +1,4 @@
-// S=(a+1)+(a+2)+(a+3).........(a+N)  print S
+package com.lakshya.Math;// S=(a+1)+(a+2)+(a+3).........(a+N)  print S
 import java.util.Scanner;
 class series{
     public static void main(String ab[]){ 

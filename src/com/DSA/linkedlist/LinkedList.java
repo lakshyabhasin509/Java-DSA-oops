@@ -168,6 +168,10 @@ public Node find(int val){
         return null;
 }
 
+//leetcode 92 reverse Linked list2
+
+    public 
+
    private class Node{
     private int value;
     private Node next;

@@ -1,4 +1,4 @@
-//WAP to change the case of the character
+package com.lakshya.Math;//WAP to change the case of the character
 import java.util.Scanner;
 class ConvertCharCase{
     public static void main(String ab[]){
