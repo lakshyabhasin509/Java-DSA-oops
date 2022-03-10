@@ -1,5 +1,9 @@
 package com.DSA.linkedlist;
 
+//TODO 10/march/2020 430,445,138,86,25,21,23,1669
+
+
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -168,9 +172,7 @@ public Node find(int val){
         return null;
 }
 
-//leetcode 92 reverse Linked list2
 
-    public 
 
    private class Node{
     private int value;
