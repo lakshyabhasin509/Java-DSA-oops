@@ -1,6 +1,6 @@
 package com.DSA.Matrices;
 
-public class Mainn {
+public class Main {
     public static void main(String[] args) {
         SymmetricMatrix m1=new SymmetricMatrix(3);
         m1.set(1,1,17);

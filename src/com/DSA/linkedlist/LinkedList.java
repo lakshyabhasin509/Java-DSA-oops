@@ -12,7 +12,17 @@ public class LinkedList {
     public LinkedList(int size) {
         this.size = size;
     }
+public int getHead(){
+        return head.value;
+}
+    public int get(int index){
+        Node temp=head;
+        for(int i=0;i<index;i++){
+            temp=temp.next;
+        }
+        return temp.value;
 
+    }
 //Recursive Insert without using tail or anything, although i will be updating the tail
     public void insertRec(int val,int index){
         if(index>size){
