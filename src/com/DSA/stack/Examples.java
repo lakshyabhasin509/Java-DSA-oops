@@ -12,7 +12,10 @@ public class Examples {
     stack.push(125);
     stack.push(192);
     stack.isEmpty();
+        System.out.println(stack.peek());
+
         System.out.println(stack.pop());
+
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());

@@ -1,6 +1,7 @@
 package com.DSA.linkedlist;
 
-//TODO 10/march/2020 430,445,138,86,25,21,23,1669
+//TODO 10/march/2020 430,445,138,86,25,21,23,1669 clone a linked lsit usign random pointer
+
 
 
 
@@ -9,18 +10,23 @@ public class LinkedList {
     private Node tail;
     private int size;
 
-    public LinkedList(int size) {
-        this.size = size;
-    }
+
 public int getHead(){
-        return head.value;
+        return head.val;
+}
+public boolean search(int n){
+    Node temp=head;
+    while(temp!=null){
+        if(temp.val ==n)return true;
+    }
+    return false;
 }
     public int get(int index){
         Node temp=head;
         for(int i=0;i<index;i++){
             temp=temp.next;
         }
-        return temp.value;
+        return temp.val;
 
     }
 //Recursive Insert without using tail or anything, although i will be updating the tail
@@ -80,7 +86,7 @@ public int getHead(){
 public void display(){
         Node temp=head;
         while(temp!=null){
-            System.out.print(temp.value + " -> ");
+            System.out.print(temp.val + " -> ");
             temp=temp.next;
         }
     System.out.println("null");
@@ -92,7 +98,7 @@ public void deleteDuplicates(Node head){
         if(head.next==null){
             tail=head;
             return;}
-        if(head.value==head.next.value){
+        if(head.val ==head.next.val){
             head.next=head.next.next;
             size--;
             deleteDuplicates(head);
@@ -101,7 +107,7 @@ public void deleteDuplicates(Node head){
 }
 
 public int deletehead(){
-        int val=head.value;
+        int val=head.val;
         head=head.next;
         if(head==null)tail=null;
         size--;
@@ -119,7 +125,7 @@ public int deleteTail(){
 
         if(size<=1)return deletehead();
         Node temp=getNode(size-2);
-        int val=temp.next.value;
+        int val=temp.next.val;
 
         temp.next=null;
         tail=temp;
@@ -136,7 +142,7 @@ public int delete(int index){
         if(index==size-1)return deleteTail();
 
         Node temp=getNode(index-1);
-        int val=temp.next.value;
+        int val=temp.next.val;
         temp.next=temp.next.next;
         return val;
 
@@ -175,7 +181,7 @@ public int delete(int index){
 public Node find(int val){
         Node temp=head;
         while (temp!=null){
-            if(temp.value==val)return temp;
+            if(temp.val ==val)return temp;
 
             temp=temp.next;
         }
@@ -185,15 +191,15 @@ public Node find(int val){
 
 
    private class Node{
-    private int value;
+    private int val;
     private Node next;
 
-    public Node(int value) {
-        this.value = value;
+    public Node(int val) {
+        this.val = val;
     }
 
-    public Node(int value, Node next) {
-        this.value = value;
+    public Node(int val, Node next) {
+        this.val = val;
         this.next = next;
     }
 

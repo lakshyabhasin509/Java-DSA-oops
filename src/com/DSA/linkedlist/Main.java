@@ -4,7 +4,7 @@ package com.DSA.linkedlist;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList list=new LinkedList(0);
+        LinkedList list=new LinkedList();
         list.insertatHead(3);
         list.insertatHead(3);
         list.insertatHead(2);

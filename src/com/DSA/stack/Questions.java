@@ -2,7 +2,21 @@ package com.DSA.stack;
 
 import java.util.Arrays;
 import java.util.Stack;
+/*
+TODO : leetcode 155:implementing a min stack
+        933,84(Histogram)
+        Celebrity problem
+        Reverse First K elements of Queue
+        2 stacks in an array
+        reverse a string using stack
+        delete middle element from stack
+        insert an element at the bottom of stack
+        reverse stack using recursion
+        sort a stack
+        N stacks in an array
+        Design special stack
 
+ */
 public class Questions {
     public static void main(String[] args) {
 
@@ -84,7 +98,7 @@ public class Questions {
                     if (stack.peek() > nums2[j])
                         ans = stack.peek();
                     else {
-                        while (!stack.isEmpty() && stack.peek() > nums2[j]) {
+                        while (!stack.isEmpty() && stack.peek() <= nums2[j]) {
                             stack.pop();
 
                         }

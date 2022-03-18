@@ -1,6 +1,7 @@
 package com.DSA.Hashing;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class hashset {
     public static void main(String[] args) {

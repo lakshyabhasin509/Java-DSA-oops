@@ -22,6 +22,6 @@ public class StackLL extends LinkedList {
         super.display();
     }
     public StackLL(int size) {
-        super(size);
+        super();
     }
 }
