@@ -23,7 +23,7 @@ public class Questions {
         Questions ob = new Questions();
         int nums1[] = {4, 10, 2};
         int nums2[] = {4,5,2,10,8,1};
-        int ans[]=ob.nearestSmallerRight(nums1, nums2);
+        int ans[]=ob.nearestSmallerLeft(nums1, nums2);
         System.out.println(Arrays.toString(ans));
     }
 
