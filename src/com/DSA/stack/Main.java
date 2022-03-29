@@ -28,15 +28,22 @@ public class Main {
 //        System.out.println( ob.next(60));
 //        System.out.println(ob.next(75));
 //        System.out.println(ob.next(85));
-long arr[]={7 ,2 ,8 ,9, 1, 3, 6, 5};
-long pr=MaxAreaHistogram.getMaxArea(arr,arr.length);
-        System.out.println(pr);
+//int arr[]={2,4};
+//int pr=MaxAreaHistogram.getMaxArea(arr,arr.length);
+//        System.out.println(pr);
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print(arr[i]);
+//        }
+maxInBinaryMatrix ob=new maxInBinaryMatrix();
 
+int max=ob.maxArea(new int[][]{{0,1,1,0},
+        {1,1,1,1},
+        {1,1,1,1},
+        {1,1,0,0}});
+        System.out.println(max);
 
-
-
-
-    }
+//
+//    }
 //    QUESTIONS AND THE PATTERN
 /*
 
@@ -58,4 +65,4 @@ long pr=MaxAreaHistogram.getMaxArea(arr,arr.length);
 
 
  */
-}
+}}

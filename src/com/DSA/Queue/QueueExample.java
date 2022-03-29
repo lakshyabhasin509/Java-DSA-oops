@@ -16,7 +16,7 @@ public class QueueExample {
         queue.add(12);
         queue.add(11);
         queue.add(1);
-        queue.peek();
+        System.out.println(queue.peek());
         System.out.println(queue.remove());
         System.out.println(queue.remove());
 

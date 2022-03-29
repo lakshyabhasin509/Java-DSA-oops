@@ -7,6 +7,12 @@ class MyThread extends Thread{
         while(true){
             System.out.println(i+"Hello");
             i++;
+            try{
+                Thread.sleep(1000);
+
+            }catch (InterruptedException e){
+                System.out.println(e);
+            }
         }
     }
 }

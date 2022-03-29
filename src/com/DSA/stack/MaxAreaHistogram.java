@@ -21,18 +21,18 @@ public class MaxAreaHistogram {
 
 
 
-    public static long getMaxArea(long hist[], long n) {
+    public static int getMaxArea(int hist[], int n) {
 
-       long max;
+       int max;
 
-       long right[]=new long[hist.length];
-       long left[]=new long[hist.length];
+       int right[]=new int[hist.length];
+       int left[]=new int[hist.length];
 
 // Nearest Smaller to right
         Stack<Pair> stack=new Stack<>();
         for (int j = hist.length-1; j >=0; j--) {
 
-           long ans;
+           int ans;
             if (stack.isEmpty()) {
                 ans = hist.length;
             } else {
@@ -54,7 +54,7 @@ public class MaxAreaHistogram {
    stack=new Stack<>();
         for (int j = 0; j < hist.length; j++) {
 
-            long ans;
+            int ans;
             if (stack.isEmpty()) {
                 ans = -1;
             } else {
@@ -73,11 +73,12 @@ public class MaxAreaHistogram {
             left[j] = ans;
 
         }
+int area[]=new int[hist.length];
         for (int i = 0; i < hist.length; i++) {
-            hist[i]=hist[i]*((right[i]-left[i])-1);
+            area[i]=hist[i]*((right[i]-left[i])-1);
         }
-        max=hist[0];
-        for (long l : hist) {
+        max=area[0];
+        for (int l : area) {
             if (l > max) max = l;
         }
 
