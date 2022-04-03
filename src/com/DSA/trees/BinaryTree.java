@@ -5,7 +5,8 @@ import java.util.*;
 public class BinaryTree {
     TreeNode root;
 
-    private class TreeNode{
+    protected class TreeNode{
+
         int data;
         TreeNode left;
         TreeNode right;

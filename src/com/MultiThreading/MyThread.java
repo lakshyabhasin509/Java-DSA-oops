@@ -16,3 +16,7 @@ class MyThread extends Thread{
         }
     }
 }
+/*
+Synchronisation : coordination or understanding in between two threads
+
+ */
