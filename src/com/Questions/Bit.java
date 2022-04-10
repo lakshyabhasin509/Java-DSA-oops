@@ -1,9 +1,14 @@
 package com.Questions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Bit {
     public static void main(String[] args) {
-       int a= Bit.minBitFlips(3,4);
-        System.out.println(a);
+    List<Integer> list=new ArrayList<>();
+    list.add(10);
+    list.get(0);
+
     }
     public static int minBitFlips(int start, int goal) {
 

@@ -1,20 +1,18 @@
 package com.Questions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Stack;
+
 
 //https://www.codingninjas.com/codestudio/contests/love-babbar-contest-l/problems/14804
 public class AppleShopNinja {
     public static void main(String[] args) {
         Solution ob = new Solution();
-        int arr[];
+        int[] arr;
         arr= new int[]{1, 3, 7, 5, 6};
-        System.out.println(  ob.minimizeSum(5,arr));
+        System.out.println(  ob.minimizeSum(arr));
     }}
 
 class Solution {
-    long minimizeSum(int N, int arr[]) {
+    long minimizeSum( int []arr) {
 
         long sum=0;
         for(int i=0;i<arr.length-1;i++){

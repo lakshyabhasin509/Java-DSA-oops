@@ -1,4 +1,4 @@
-package src.files;
+package com.lakshya.Math.files;
 /**
  * factorial
  * to find the factorial of a number

@@ -2,8 +2,9 @@ package com.DSA.trees;
 
 public class Main {
     public static void main(String[] args) {
-       PopulatingNextRightPointerInEachNode ob=new PopulatingNextRightPointerInEachNode(1);
-       ob.createTree();
+BinaryTree tree=new BinaryTree(1);
+tree.createTree();
+        System.out.println(tree.pathSum(7));
 
 
     }

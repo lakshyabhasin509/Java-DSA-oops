@@ -1,4 +1,4 @@
-package src.files;
+package com.lakshya.Math.files;
 
 
 import java.util.Scanner;
