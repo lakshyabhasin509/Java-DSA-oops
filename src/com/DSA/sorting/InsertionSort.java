@@ -2,7 +2,7 @@ package com.DSA.sorting;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class    InsertionSort {
     public static void main(String[] args) {
         int[] arr={1234,12,334,123,3,43,231,234,23,123,4};
         insertion(arr);

@@ -5,8 +5,10 @@ interface Mylambda{
 }
 public class lambaexpression {
     public static void main(String[] args) {
-Mylambda ob=(a,b)->a+b;
-        System.out.println(ob.display(10,20));
+//Mylambda ob=(a,b)->a+b;
+//        System.out.println(ob.display(10,20));
+//capture in lambda Expression
+        
 
     }
 }

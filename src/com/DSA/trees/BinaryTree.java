@@ -178,6 +178,14 @@ void levelOrder() {
         list.remove(list.size()-1);
         return left+right+count;
     }
-
+    public TreeNode search(int data){
+        TreeNode temp=root;
+        while(temp!=null){
+            if(temp.data==data)return temp;
+            else if(data> temp.data)temp=temp.right;
+            else temp=temp.left;
+        }
+        return temp;
+    }
 
 }

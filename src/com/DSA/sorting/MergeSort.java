@@ -44,7 +44,7 @@ System.out.println(Arrays.toString(arr));
         }
         return mix;
     }
-//
+
 static void inplaceMerge(int arr[],int start,int end){
     if(end-start==1)return;
     int mid=start+(end-start)/2;
