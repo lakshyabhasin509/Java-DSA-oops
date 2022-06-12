@@ -1,49 +1,67 @@
-package com.DSA.Graphs;
+package Graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 //Graph using a Map<Integer,List<Integer>> instead of List<List<Integer>>
 //in the map we can use a set instead of list just to not include duplicates by mistake
 public class Graph<T> {
-private Map<T , List<T>> adjList;
+    ArrayList<ArrayList<T>> list;
+    int n;
+    public Graph(int n){
 
-    public Graph() {
+        this.n=n;
+        list=new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            list.add(new ArrayList<>());
 
-
-        adjList= new HashMap<>();
-    }
-
-    public Map<T, List<T>> getAdjList() {
-        return adjList;
-    }
-
-    public void setAdjList(HashMap<T, List<T>> adjList) {
-        this.adjList = adjList;
-    }
-
-    void addEdge(T u, T v, boolean directed){
-//         create an edge from u to v
-        if(adjList.get(u)!=null)
-        adjList.get(u).add(v);
-        else {
-            adjList.put(u,new ArrayList<>());
-            adjList.get(u).add(v);
         }
+        System.out.println(n);
+    }
 
-        if(!directed){
-            if(adjList.get(v)!=null)
-                adjList.get(v).add(u);
-            else {
-                adjList.put(v,new ArrayList<>());
-                adjList.get(v).add(u);
+    public ArrayList<ArrayList<T>> getList() {
+        return list;
+    }
+
+    public void setList(ArrayList<ArrayList<T>> list) {
+        this.list = list;
+    }
+
+
+
+    //    Represented as arrayList
+    void addEdge(T u,T v,boolean directed){
+        list.get((Integer) u).add(v);
+
+        if (!directed)
+        list.get((Integer) v).add(u);
+
+    }
+
+    public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
+        ArrayList<Integer> bfs =new ArrayList<>();
+        boolean vis[]=new boolean[V];
+
+//        for(int i=0;i<V;i++){
+//            if(vis[i]==false){
+        Queue<Integer> q =new ArrayDeque<>();
+        q.add(0);
+        vis[0]=true;
+
+        while(!q.isEmpty()){
+            int n=q.poll();
+            bfs.add(n);
+            for (int j:adj.get(n)) {
+
+                if(!vis[j]){
+                    q.add(j);
+                    vis[j]=true;
+                }
             }
         }
-    }
-    void printAdjList(){
-        System.out.println(adjList);
+
+
+        return bfs;
     }
 
 

@@ -1,33 +1,25 @@
-package com.DSA.recursion;
+package RecursionAndBacktracking;
 
+import javax.swing.table.TableStringConverter;
 import java.util.ArrayList;
 
 public class Subsequence {
     public static void main(String[] args) {
-int res=subSeqRet("","aaabb","ab");
-        System.out.println(res);
+        System.out.println( subseq("","ABC"));
     }
-//    just printing it
-    public static void subSeq(String result, String s){
-        if(s.isEmpty()){
-            System.out.println(result);
-            return;
+
+    private static ArrayList<String> subseq(String p, String abc) {
+        if(abc.isEmpty()){
+
+            ArrayList<String >temp=new ArrayList<>();
+            temp.add(p);
+            return temp;
         }
-        char ch=s.charAt(0);
-        subSeq(result,s.substring(1));
-        subSeq(result+ch,s.substring(1));
-    }
-    public static int subSeqRet(String result, String s,String pattern){
+        char ch= abc.charAt(0);
+        ArrayList<String> add=subseq(p+ch,abc.substring(1));
+        ArrayList<String> skip=subseq(p,abc.substring(1));
 
-        if(s.isEmpty()){
-
-            if(result.equals(pattern))return 1;
-            else return 0;
-        }
-        char ch=s.charAt(0);
-        int left= subSeqRet(result,s.substring(1),pattern);
-        int right=subSeqRet(result+ch,s.substring(1),pattern);
-
-    return left+right;
+        add.addAll(skip);
+        return add;
     }
 }
