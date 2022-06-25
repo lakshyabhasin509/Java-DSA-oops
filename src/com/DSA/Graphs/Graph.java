@@ -1,4 +1,4 @@
-package Graph;
+package com.DSA.Graphs;
 
 
 import java.util.*;
@@ -30,7 +30,7 @@ public class Graph<T> {
 
 
     //    Represented as arrayList
-    void addEdge(T u,T v,boolean directed){
+    public void addEdge(T u, T v, boolean directed){
         list.get((Integer) u).add(v);
 
         if (!directed)

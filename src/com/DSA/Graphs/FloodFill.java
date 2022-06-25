@@ -1,4 +1,4 @@
-package Graph;
+package com.DSA.Graphs;
 //https://leetcode.com/problems/flood-fill/
 //733
 public class FloodFill {

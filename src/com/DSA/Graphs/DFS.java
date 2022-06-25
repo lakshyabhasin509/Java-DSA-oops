@@ -1,4 +1,4 @@
-package Graph;
+package com.DSA.Graphs;
 
 import java.util.ArrayList;
 import java.util.Stack;
