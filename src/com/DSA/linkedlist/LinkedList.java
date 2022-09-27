@@ -2,7 +2,10 @@ package com.DSA.linkedlist;
 
 //TODO 10/march/2020 430,445,138,86,25,21,23,1669 clone a linked lsit usign random pointer
 
-
+class Node{
+    int value;
+    Node next;
+}
 
 
 public class LinkedList {

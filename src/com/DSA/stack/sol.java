@@ -1,9 +1,16 @@
-package com.lakshya.Strings;
+package com.DSA.stack;
 
 import java.util.Arrays;
 import java.util.Stack;
 
-class tolowercase {
+class sol {
+    public static void main(String[] args) {
+        maxRectangle ob=new maxRectangle();
+       char matrix[][]={{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}};
+        System.out.println(ob.maximalRectangle(matrix));
+    }
+}
+class maxRectangle{
     public int maximalRectangle(char[][] matrix) {
         int hist[]=new int[matrix[0].length];
         int ans=0;
