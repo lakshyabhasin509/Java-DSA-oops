@@ -8,7 +8,6 @@ public class CycleSort {
         int[] arr={5,4,1,2,3};
        cycle(arr);
         System.out.println(Arrays.toString(arr));
-        StringBuffer a=new StringBuffer();
 
     }
     static void cycle(int[]arr){

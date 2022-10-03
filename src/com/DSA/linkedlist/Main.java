@@ -4,19 +4,18 @@ package com.DSA.linkedlist;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList list=new LinkedList();
-        list.insertatHead(3);
-        list.insertatHead(3);
-        list.insertatHead(2);
-        list.insertatHead(1);
-        list.insertatHead(1);
+      DesignLinkedList ob=new DesignLinkedList();
+      ob.addAtHead(1);
+      ob.addAtTail(3);
+      ob.addAtIndex(1,2);
+        System.out.println(ob.get(0));
+        System.out.println(ob.get(1));
+        System.out.println(ob.get(2));
 
-        list.display();
 //        list.insert(555,14);
 //       list.delete();
 //list.deleteDuplicates();
 
-        list.display();
 
     }
 }
